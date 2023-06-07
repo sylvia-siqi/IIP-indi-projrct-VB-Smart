@@ -1,0 +1,43 @@
+===
+Train set: TrainDataAll.arff
+Attributes: 3
+Instances: 105
+Classes: 5
+Name: @attribute label {standing,jumping,spiking,setting,recieving}
+===
+Test set: VBTest.arff
+Attributes: 3
+Instances: 32
+Classes: 5
+Name: @attribute label {standing,jumping,setting,recieving,spiking}
+
+Results
+======
+
+Correctly Classified Instances           3                9.375  %
+Incorrectly Classified Instances        29               90.625  %
+Kappa statistic                         -0.1021
+Mean absolute error                      0.3488
+Root mean squared error                  0.4546
+Relative absolute error                114.9555 %
+Root relative squared error            117.1461 %
+Total Number of Instances               32     
+
+=== Confusion Matrix ===
+
+ a b c d e   <-- classified as
+ 2 0 0 0 0 | a = standing
+ 3 1 0 0 0 | b = jumping
+ 3 0 0 8 0 | c = setting
+ 7 0 0 0 1 | d = recieving
+ 0 0 7 0 0 | e = spiking
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.433    0.133      1.000    0.235      0.275    0.867     0.200     standing
+                 0.250    0.000    1.000      0.250    0.400      0.475    0.839     0.438     jumping
+                 0.000    0.333    0.000      0.000    0.000      -0.383   0.548     0.396     setting
+                 0.000    0.333    0.000      0.000    0.000      -0.333   0.083     0.250     recieving
+                 0.000    0.040    0.000      0.000    0.000      -0.095   0.120     0.219     spiking
+Weighted Avg.    0.094    0.234    0.133      0.094    0.065      -0.159   0.394     0.313     

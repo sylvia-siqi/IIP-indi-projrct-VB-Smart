@@ -1,0 +1,89 @@
+===
+Train set: VBTrain_5.arff
+Attributes: 7
+Instances: 137
+Classes: 5
+Name: @attribute label {jumping,spiking,setting,recieving,moving}
+
+=== Training: Linear SVM ( C = 4.0 )
+Jun. 04, 2023 5:52:18 P.M. com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Jun. 04, 2023 5:52:18 P.M. com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+
+Results
+======
+
+Correctly Classified Instances         132               96.3504 %
+Incorrectly Classified Instances         5                3.6496 %
+Kappa statistic                          0.9525
+Mean absolute error                      0.2423
+Root mean squared error                  0.3198
+Relative absolute error                 78.5253 %
+Root relative squared error             81.4532 %
+Total Number of Instances              137     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 21  0  0  2  0 |  a = jumping
+  0 29  2  0  0 |  b = spiking
+  0  0 35  0  0 |  c = setting
+  1  0  0 38  0 |  d = recieving
+  0  0  0  0  9 |  e = moving
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.913    0.009    0.955      0.913    0.933      0.921    0.973     0.896     jumping
+                 0.935    0.000    1.000      0.935    0.967      0.958    0.966     0.949     spiking
+                 1.000    0.020    0.946      1.000    0.972      0.963    0.990     0.946     setting
+                 0.974    0.020    0.950      0.974    0.962      0.947    0.984     0.937     recieving
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     moving
+Weighted Avg.    0.964    0.012    0.964      0.964    0.963      0.953    0.981     0.939     
+
+
+》》》》》》》》》》》》》》》》》》》》》》》》》》》》》
+===
+Train set: VBTrain_5.arff
+Attributes: 7
+Instances: 137
+Classes: 5
+Name: @attribute label {jumping,spiking,setting,recieving,moving}
+===
+Test set: VBTestReal_5.arff
+Attributes: 7
+Instances: 123
+Classes: 5
+Name: @attribute label {jumping,spiking,setting,recieving,moving}
+
+Results
+======
+
+Correctly Classified Instances         114               92.6829 %
+Incorrectly Classified Instances         9                7.3171 %
+Kappa statistic                          0.9055
+Mean absolute error                      0.2449
+Root mean squared error                  0.3237
+Relative absolute error                 79.159  %
+Root relative squared error             82.374  %
+Total Number of Instances              123     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 11  0  0  1  0 |  a = jumping
+  1 21  3  0  0 |  b = spiking
+  0  0 20  0  0 |  c = setting
+  2  0  0 38  0 |  d = recieving
+  0  0  0  2 24 |  e = moving
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.027    0.786      0.917    0.846      0.831    0.962     0.733     jumping
+                 0.840    0.000    1.000      0.840    0.913      0.898    0.962     0.907     spiking
+                 1.000    0.029    0.870      1.000    0.930      0.919    0.985     0.870     setting
+                 0.950    0.036    0.927      0.950    0.938      0.908    0.976     0.914     recieving
+                 0.923    0.000    1.000      0.923    0.960      0.951    0.977     0.967     moving
+Weighted Avg.    0.927    0.019    0.934      0.927    0.927      0.909    0.973     0.899 

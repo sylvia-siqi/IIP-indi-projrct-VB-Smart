@@ -1,0 +1,37 @@
+@relation VBTest
+@attribute m_x numeric
+@attribute sd_x numeric
+@attribute label {standing,jumping,setting,recieving,spiking}
+@data
+228.22,23.3013,standing
+228.8,9.463138,standing
+232.1,25.258862,jumping
+223.54,60.05277,jumping
+223.06,64.60126,jumping
+233.8,42.301155,jumping
+165.5,74.03977,setting
+164.4,70.83497,setting
+169.64,89.038795,setting
+159.66,90.27568,setting
+174.56,124.250275,setting
+170.0,111.10741,setting
+167.58,92.20896,setting
+157.9,76.82746,setting
+158.22,73.58552,setting
+161.1,59.70241,setting
+147.86,46.521893,setting
+213.76,28.486702,recieving
+209.68,28.08111,recieving
+210.26,19.710981,recieving
+212.22,25.961735,recieving
+210.52,21.623158,recieving
+203.64,22.785385,recieving
+205.72,15.145613,recieving
+211.84,16.765331,recieving
+152.7,138.91875,spiking
+147.76,142.44664,spiking
+138.38,145.4792,spiking
+141.64,161.74554,spiking
+138.66,145.52686,spiking
+153.0,145.69734,spiking
+150.28,141.04494,spiking

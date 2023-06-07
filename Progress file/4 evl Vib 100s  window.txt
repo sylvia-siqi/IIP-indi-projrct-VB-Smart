@@ -1,0 +1,76 @@
+c=16
+======
+
+Correctly Classified Instances         138               90.1961 %
+Incorrectly Classified Instances        15                9.8039 %
+Kappa statistic                          0.8754
+Mean absolute error                      0.2473
+Root mean squared error                  0.3264
+Relative absolute error                 78.6843 %
+Root relative squared error             82.3341 %
+Total Number of Instances              153     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 19  0  2  1  1 |  a = jumping
+  0 26  1  0  0 |  b = spiking
+  3  1 31  0  3 |  c = recieving
+  0  0  1 41  1 |  d = setting
+  0  0  0  1 21 |  e = moving
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.826    0.023    0.864      0.826    0.844      0.818    0.905     0.729     jumping
+                 0.963    0.008    0.963      0.963    0.963      0.955    0.994     0.951     spiking
+                 0.816    0.035    0.886      0.816    0.849      0.803    0.882     0.780     recieving
+                 0.953    0.018    0.953      0.953    0.953      0.935    0.968     0.930     setting
+                 0.955    0.038    0.808      0.955    0.875      0.856    0.980     0.807     moving
+Weighted Avg.    0.902    0.024    0.904      0.902    0.902      0.877    0.943     0.849   
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.>
+
+Train set: VBVibTrain2.arff
+Attributes: 64
+Instances: 153
+Classes: 5
+Name: @attribute label {jumping,spiking,recieving,setting,moving}
+===
+Test set: VBTest.arff
+Attributes: 64
+Instances: 76
+Classes: 5
+Name: @attribute label {jumping,spiking,recieving,setting,moving}
+
+Results
+======
+
+Correctly Classified Instances          69               90.7895 %
+Incorrectly Classified Instances         7                9.2105 %
+Kappa statistic                          0.8833
+Mean absolute error                      0.25  
+Root mean squared error                  0.3305
+Relative absolute error                 78.681  %
+Root relative squared error             82.9292 %
+Total Number of Instances               76     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+  8  0  3  0  0 |  a = jumping
+  0 18  0  0  0 |  b = spiking
+  0  0 15  0  0 |  c = recieving
+  0  0  0 10  4 |  d = setting
+  0  0  0  0 18 |  e = moving
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.727    0.000    1.000      0.727    0.842      0.834    0.845     0.569     jumping
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     spiking
+                 1.000    0.049    0.833      1.000    0.909      0.890    0.975     0.833     recieving
+                 0.714    0.000    1.000      0.714    0.833      0.819    0.848     0.780     setting
+                 1.000    0.069    0.818      1.000    0.900      0.873    0.966     0.818     moving
+Weighted Avg.    0.908    0.026    0.924      0.908    0.905      0.891    0.937     0.821     

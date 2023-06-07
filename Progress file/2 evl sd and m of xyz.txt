@@ -1,0 +1,138 @@
+C= 16
+
+===
+Train set: VBTrain.arff
+Attributes: 7
+Instances: 163
+Classes: 4
+Name: @attribute label {jumping,spiking,setting,recieving}
+
+=== Training: Linear SVM ( C = 16.0 )
+Jun. 03, 2023 1:36:09 P.M. com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Jun. 03, 2023 1:36:09 P.M. com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+
+Results
+======
+
+Correctly Classified Instances         145               88.9571 %
+Incorrectly Classified Instances        18               11.0429 %
+Kappa statistic                          0.8511
+Mean absolute error                      0.2607
+Root mean squared error                  0.3266
+Relative absolute error                 69.8719 %
+Root relative squared error             75.6109 %
+Total Number of Instances              163     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 47  0  0  0 |  a = jumping
+ 11 31  0  1 |  b = spiking
+  4  0 29  0 |  c = setting
+  2  0  0 38 |  d = recieving
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.147    0.734      1.000    0.847      0.792    0.915     0.721     jumping
+                 0.721    0.000    1.000      0.721    0.838      0.810    0.953     0.872     spiking
+                 0.879    0.000    1.000      0.879    0.935      0.923    0.984     0.938     setting
+                 0.950    0.008    0.974      0.950    0.962      0.950    0.996     0.973     recieving
+Weighted Avg.    0.890    0.044    0.917      0.890    0.891      0.862    0.959     0.867     
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+===
+Train set: VBTrain.arff
+Attributes: 7
+Instances: 163
+Classes: 4
+Name: @attribute label {jumping,spiking,setting,recieving}
+===
+Test set: VBTest_1.arff
+Attributes: 7
+Instances: 94
+Classes: 4
+Name: @attribute label {jumping,spiking,setting,recieving}
+
+Results
+======
+
+Correctly Classified Instances          74               78.7234 %
+Incorrectly Classified Instances        20               21.2766 %
+Kappa statistic                          0.7074
+Mean absolute error                      0.2766
+Root mean squared error                  0.3485
+Relative absolute error                 81.0175 %
+Root relative squared error             84.5204 %
+Total Number of Instances               94     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 17  0  0  0 |  a = jumping
+ 11 30  2  2 |  b = spiking
+  2  0 15  0 |  c = setting
+  3  0  0 12 |  d = recieving
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.208    0.515      1.000    0.680      0.639    0.916     0.567     jumping
+                 0.667    0.000    1.000      0.667    0.800      0.714    0.914     0.903     spiking
+                 0.882    0.026    0.882      0.882    0.882      0.856    0.905     0.800     setting
+                 0.800    0.025    0.857      0.800    0.828      0.797    0.980     0.829     recieving
+Weighted Avg.    0.787    0.046    0.868      0.787    0.798      0.740    0.923     0.812     
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+===
+Train set: VBTrain.arff
+Attributes: 7
+Instances: 163
+Classes: 4
+Name: @attribute label {jumping,spiking,setting,recieving}
+
+=== Training: Linear SVM ( C = 1.0 )
+Jun. 03, 2023 2:32:49 P.M. com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemARPACK
+Jun. 03, 2023 2:32:49 P.M. com.github.fommil.netlib.ARPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefARPACK
+5-fold CV Accuracy: 86.50 %
+
+
+=== Training: Linear SVM ( C = 2.0 )
+5-fold CV Accuracy: 85.89 %
+
+
+=== Training: Linear SVM ( C = 4.0 )
+5-fold CV Accuracy: 88.34 %
+
+
+=== Training: Linear SVM ( C = 8.0 )
+5-fold CV Accuracy: 87.73 %
+
+
+=== Training: Linear SVM ( C = 16.0 )
+5-fold CV Accuracy: 88.96 %
+
+
+=== Training: Linear SVM ( C = 32.0 )
+5-fold CV Accuracy: 88.34 %
+
+
+=== Training: Linear SVM ( C = 64.0 )
+5-fold CV Accuracy: 87.73 %
+
+
+=== Training: Linear SVM ( C = 128.0 )
+5-fold CV Accuracy: 87.73 %
+
+
+=== Training: Linear SVM ( C = 256.0 )
+5-fold CV Accuracy: 87.73 %
+
